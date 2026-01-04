@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DecoProfile - Browser Usage Example</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+        background: linear-gradient(
+          135deg,
+          #1a1a2e 0%,
+          #16213e 50%,
+          #0f3460 100%
+        );
+        min-height: 100vh;
+        padding: 40px 20px;
+        color: #fff;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 2.5rem;
+        background: linear-gradient(90deg, #667eea, #764ba2);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .section {
+        margin-bottom: 60px;
+      }
+      .section h2 {
+        margin-bottom: 20px;
+        color: #a5b4fc;
+        font-size: 1.5rem;
+      }
+      .demo-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+      }
+      .demo-item {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 16px;
+        padding: 24px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+      }
+      .demo-item h3 {
+        margin-top: 16px;
+        font-size: 1rem;
+        color: #e0e7ff;
+      }
+      pre {
+        display: block;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 20px;
+        border-radius: 12px;
+        margin-top: 40px;
+        font-family: "Fira Code", "Consolas", monospace;
+        font-size: 0.9rem;
+        overflow-x: auto;
+        white-space: pre;
+        color: #a5f3fc;
+        line-height: 1.6;
+      }
+      .code-title {
+        color: #a5b4fc;
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎨 DecoProfile Browser Demo</h1>
+
+      <!-- Avatar Decoration Demo -->
+      <div class="section">
+        <h2>Avatar Decoration</h2>
+        <div class="demo-grid">
+          <div class="demo-item">
+            <div id="avatar1"></div>
+            <h3>Cat Ears</h3>
+          </div>
+          <div class="demo-item">
+            <div id="avatar2"></div>
+            <h3>Cyberpunk</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile Decoration Demo -->
+      <div class="section">
+        <h2>Profile Decoration</h2>
+        <div class="demo-grid">
+          <div class="demo-item">
+            <div id="profile1"></div>
+            <h3>Sakura Dreams</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Namespace Decoration Demo -->
+      <div class="section">
+        <h2>Namespace Decoration</h2>
+        <div class="demo-grid">
+          <div class="demo-item">
+            <div id="namespace1"></div>
+            <h3>Galaxy Effect</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Usage Instructions -->
+      <div class="section">
+        <h2>📖 How to Use</h2>
+
+        <p class="code-title">1. Include the script (no React CDN needed!):</p>
+        <pre>&lt;script src="decoprofile.browser.js"&gt;&lt;/script&gt;</pre>
+
+        <p class="code-title" style="margin-top: 30px">
+          2. Render decorations with the simple API:
+        </p>
+        <pre>
+// Avatar Decoration
+DecoProfile.render('#avatar', 'Avatar', {
+  name: 'CatEars',
+  src: 'https://example.com/avatar.png',
+  size: 160
+});
+
+// Profile Decoration  
+DecoProfile.render('#profile', 'Profile', {
+  name: 'SakuraDreams',
+  src: 'https://example.com/avatar.png',
+  scale: 1
+});
+
+// Namespace Decoration
+DecoProfile.render('#namespace', 'Namespace', {
+  name: 'Galaxy',
+  src: 'https://example.com/avatar.png',
+  userName: 'YourName',
+  scale: 1
+});</pre
+        >
+      </div>
+    </div>
+
+    <!-- DecoProfile Browser Bundle - includes React, no CDN needed! -->
+    <script src="../browser/decoprofile.browser.js"></script>
+
+    <script>
+      // Sample avatar URL
+      const avatarUrl = "https://avatars.githubusercontent.com/u/1?v=4";
+
+      // Simple API - just call DecoProfile.render()!
+      DecoProfile.render("#avatar1", "Avatar", {
+        name: "Woodsprites",
+        src: avatarUrl,
+        size: 160,
+      });
+
+      DecoProfile.render("#avatar2", "Avatar", {
+        name: "Cyberpunk",
+        src: avatarUrl,
+        size: 160,
+      });
+
+      DecoProfile.render("#profile1", "Profile", {
+        name: "Maple Mornings",
+        src: avatarUrl,
+        scale: 1,
+      });
+
+      DecoProfile.render("#namespace1", "Namespace", {
+        name: "Galaxy",
+        src: avatarUrl,
+        userName: "DecoUser",
+        scale: 1,
+      });
+    </script>
+  </body>
+</html>
