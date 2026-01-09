@@ -1,1 +1,1 @@
-![](https://github-readme-stats.vercel.app/api?username=vkop007&theme=dark&title_color=8B0000&text_color=8B0000&icon_color=8B0000&bg_color=000000&hide_border=false&include_all_commits=false&count_private=true)
+![](https://nirzak-streak-stats.vercel.app/?user=vkop007&theme=highcontrast&hide_border=false)<br/>
