@@ -1,3 +1,1 @@
-![VK's GitHub Stats](https://github-readme-stats.vercel.app/api?username=vkop007&show_icons=true&theme=radical)
-
-
+![](https://github-readme-stats.vercel.app/api?username=vkop007&theme=dark&title_color=8B0000&text_color=8B0000&icon_color=8B0000&bg_color=000000&hide_border=false&include_all_commits=false&count_private=true)
