@@ -1,3 +1,3 @@
 <p align="center">
-  <img src="https://nirzak-streak-stats.vercel.app/?user=vkop007&theme=highcontrast&hide_border=false" />
+  <img src="https://streak-stats.demolab.com/?user=vkop007&theme=highcontrast" />
 </p>
